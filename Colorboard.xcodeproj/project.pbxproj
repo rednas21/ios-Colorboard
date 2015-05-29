@@ -10,7 +10,7 @@
 		EA6F26D61B191E5500304979 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6F26D51B191E5500304979 /* main.m */; };
 		EA6F26D91B191E5500304979 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6F26D81B191E5500304979 /* AppDelegate.m */; };
 		EA6F26DC1B191E5500304979 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6F26DB1B191E5500304979 /* ViewController.m */; };
-		EA6F26DF1B191E5500304979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6F26DD1B191E5500304979 /* Main.storyboard */; };
+		EA6F26DF1B191E5500304979 /* Colorboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6F26DD1B191E5500304979 /* Colorboard.storyboard */; };
 		EA6F26E11B191E5500304979 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6F26E01B191E5500304979 /* Images.xcassets */; };
 		EA6F26E41B191E5500304979 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6F26E21B191E5500304979 /* LaunchScreen.xib */; };
 		EA6F26F01B191E5500304979 /* ColorboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6F26EF1B191E5500304979 /* ColorboardTests.m */; };
@@ -34,7 +34,7 @@
 		EA6F26D81B191E5500304979 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EA6F26DA1B191E5500304979 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EA6F26DB1B191E5500304979 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EA6F26DE1B191E5500304979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA6F26DE1B191E5500304979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Colorboard.storyboard; sourceTree = "<group>"; };
 		EA6F26E01B191E5500304979 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA6F26E31B191E5500304979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EA6F26E91B191E5500304979 /* ColorboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +85,7 @@
 				EA6F26D81B191E5500304979 /* AppDelegate.m */,
 				EA6F26DA1B191E5500304979 /* ViewController.h */,
 				EA6F26DB1B191E5500304979 /* ViewController.m */,
-				EA6F26DD1B191E5500304979 /* Main.storyboard */,
+				EA6F26DD1B191E5500304979 /* Colorboard.storyboard */,
 				EA6F26E01B191E5500304979 /* Images.xcassets */,
 				EA6F26E21B191E5500304979 /* LaunchScreen.xib */,
 				EA6F26D31B191E5500304979 /* Supporting Files */,
@@ -199,7 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6F26DF1B191E5500304979 /* Main.storyboard in Resources */,
+				EA6F26DF1B191E5500304979 /* Colorboard.storyboard in Resources */,
 				EA6F26E41B191E5500304979 /* LaunchScreen.xib in Resources */,
 				EA6F26E11B191E5500304979 /* Images.xcassets in Resources */,
 			);
@@ -244,12 +244,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA6F26DD1B191E5500304979 /* Main.storyboard */ = {
+		EA6F26DD1B191E5500304979 /* Colorboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EA6F26DE1B191E5500304979 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Colorboard.storyboard;
 			sourceTree = "<group>";
 		};
 		EA6F26E21B191E5500304979 /* LaunchScreen.xib */ = {
