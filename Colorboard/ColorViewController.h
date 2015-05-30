@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ColorDescription.h"
 
-@interface ViewController : UIViewController
+@interface ColorViewController : UIViewController
 
-@property (nonatomic, weak) IBOutlet UITextField *textFiled;
+@property (nonatomic) BOOL existingColor;
+@property (nonatomic) ColorDescription *colorDescription;
+
+@property (nonatomic, weak) IBOutlet UITextField *textField;
 
 @property (nonatomic, weak) IBOutlet UISlider *redSlider;
 @property (nonatomic, weak) IBOutlet UISlider *greenSlider;

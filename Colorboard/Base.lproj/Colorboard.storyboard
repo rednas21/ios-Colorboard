@@ -23,10 +23,22 @@
         <!--Colors-->
         <scene sceneID="24M-Lg-Nn5">
             <objects>
-                <tableViewController id="QpV-77-3cv" sceneMemberID="viewController">
+                <tableViewController id="QpV-77-3cv" customClass="PaletteViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hZ6-DV-3RH">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" id="fUe-FA-Fmt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUe-FA-Fmt" id="qLc-N0-que">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Npx-bU-t5h" kind="show" id="Q4y-PF-MWc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <sections/>
                         <connections>
                             <outlet property="dataSource" destination="QpV-77-3cv" id="Ann-h7-g2A"/>
@@ -36,7 +48,7 @@
                     <navigationItem key="navigationItem" title="Colors" id="T5x-MG-bFZ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="495-TA-2v4">
                             <connections>
-                                <segue destination="Nfa-Qi-f0a" kind="presentation" id="5Ek-Y2-cBo"/>
+                                <segue destination="Nfa-Qi-f0a" kind="presentation" identifier="NewColor" id="Hfh-9T-s9s"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -59,12 +71,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWT-Y3-YyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2526" y="57.75"/>
+            <point key="canvasLocation" x="2529" y="441.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="VVU-IN-wXP">
             <objects>
-                <viewController id="Npx-bU-t5h" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Npx-bU-t5h" customClass="ColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6dv-re-suJ"/>
                         <viewControllerLayoutGuide type="bottom" id="de9-NH-ea7"/>
@@ -169,7 +181,7 @@
                         <outlet property="blueSlider" destination="yaj-ow-cV5" id="ETj-cf-5xx"/>
                         <outlet property="greenSlider" destination="Ft7-Wb-exm" id="fZL-ky-HEE"/>
                         <outlet property="redSlider" destination="jgo-2N-Hg6" id="Fdm-5t-Js7"/>
-                        <outlet property="textFiled" destination="Kem-vO-ml8" id="l14-y3-a8H"/>
+                        <outlet property="textField" destination="Kem-vO-ml8" id="eVv-dv-oki"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9yY-c1-442" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -177,4 +189,7 @@
             <point key="canvasLocation" x="3375" y="57.75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Q4y-PF-MWc"/>
+    </inferredMetricsTieBreakers>
 </document>
