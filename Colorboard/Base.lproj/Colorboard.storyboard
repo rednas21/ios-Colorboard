@@ -4,33 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="V1q-bQ-Kqn">
-            <objects>
-                <tableViewController id="Rrf-bP-kcq" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aaH-lu-KBK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i8Z-3a-hYO">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i8Z-3a-hYO" id="tYp-Jd-e18">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Rrf-bP-kcq" id="g0x-iJ-4bO"/>
-                            <outlet property="delegate" destination="Rrf-bP-kcq" id="TFd-ig-xSL"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="lTk-SJ-MdF"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WWz-2k-swQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1757" y="57"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="9GX-79-iMB">
             <objects>
@@ -40,12 +13,168 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Rrf-bP-kcq" kind="relationship" relationship="rootViewController" id="ZF5-ob-mPG"/>
+                        <segue destination="QpV-77-3cv" kind="relationship" relationship="rootViewController" id="rGV-r0-K43"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBm-Pt-O0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768" y="57"/>
+            <point key="canvasLocation" x="816" y="57.75"/>
+        </scene>
+        <!--Colors-->
+        <scene sceneID="24M-Lg-Nn5">
+            <objects>
+                <tableViewController id="QpV-77-3cv" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hZ6-DV-3RH">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="QpV-77-3cv" id="Ann-h7-g2A"/>
+                            <outlet property="delegate" destination="QpV-77-3cv" id="04Q-Ol-jiv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Colors" id="T5x-MG-bFZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="495-TA-2v4">
+                            <connections>
+                                <segue destination="Nfa-Qi-f0a" kind="presentation" id="5Ek-Y2-cBo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8x-2U-eFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680" y="57.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Qd-Y7-RVh">
+            <objects>
+                <navigationController id="Nfa-Qi-f0a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wcw-hT-PyF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Npx-bU-t5h" kind="relationship" relationship="rootViewController" id="5AQ-og-yai"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWT-Y3-YyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2526" y="57.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VVU-IN-wXP">
+            <objects>
+                <viewController id="Npx-bU-t5h" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6dv-re-suJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="de9-NH-ea7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jg8-cd-bd6">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kem-vO-ml8">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="101" width="326" height="30"/>
+                                </variation>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jgo-2N-Hg6">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="185" width="330" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeColor:" destination="Npx-bU-t5h" eventType="valueChanged" id="gGz-WU-qmt"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ft7-Wb-exm">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="252" width="330" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeColor:" destination="Npx-bU-t5h" eventType="valueChanged" id="kxW-cd-KJA"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngR-0n-ZcG">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="156" width="32" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWr-kf-YQI">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="223" width="47" height="21"/>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yaj-ow-cV5">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="319" width="330" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeColor:" destination="Npx-bU-t5h" eventType="valueChanged" id="U3f-6i-82Z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7k-iw-87k">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="290" width="35" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Kem-vO-ml8"/>
+                                <exclude reference="jgo-2N-Hg6"/>
+                                <exclude reference="Ft7-Wb-exm"/>
+                                <exclude reference="ngR-0n-ZcG"/>
+                                <exclude reference="WWr-kf-YQI"/>
+                                <exclude reference="yaj-ow-cV5"/>
+                                <exclude reference="m7k-iw-87k"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Kem-vO-ml8"/>
+                                <include reference="jgo-2N-Hg6"/>
+                                <include reference="Ft7-Wb-exm"/>
+                                <include reference="ngR-0n-ZcG"/>
+                                <include reference="WWr-kf-YQI"/>
+                                <include reference="yaj-ow-cV5"/>
+                                <include reference="m7k-iw-87k"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="CgD-xv-pB5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="UL7-a8-RLo">
+                            <connections>
+                                <action selector="dismiss:" destination="Npx-bU-t5h" id="wvj-Ut-6p8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="blueSlider" destination="yaj-ow-cV5" id="ETj-cf-5xx"/>
+                        <outlet property="greenSlider" destination="Ft7-Wb-exm" id="fZL-ky-HEE"/>
+                        <outlet property="redSlider" destination="jgo-2N-Hg6" id="Fdm-5t-Js7"/>
+                        <outlet property="textFiled" destination="Kem-vO-ml8" id="l14-y3-a8H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yY-c1-442" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3375" y="57.75"/>
         </scene>
     </scenes>
 </document>

@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UITextField *textFiled;
+
+@property (nonatomic, weak) IBOutlet UISlider *redSlider;
+@property (nonatomic, weak) IBOutlet UISlider *greenSlider;
+@property (nonatomic, weak) IBOutlet UISlider *blueSlider;
 
 @end
 

@@ -14,6 +14,7 @@
 		EA6F26E11B191E5500304979 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6F26E01B191E5500304979 /* Images.xcassets */; };
 		EA6F26E41B191E5500304979 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6F26E21B191E5500304979 /* LaunchScreen.xib */; };
 		EA6F26F01B191E5500304979 /* ColorboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6F26EF1B191E5500304979 /* ColorboardTests.m */; };
+		EA6F26FB1B19352200304979 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6F26FA1B19352200304979 /* PaletteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		EA6F26E91B191E5500304979 /* ColorboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6F26EE1B191E5500304979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA6F26EF1B191E5500304979 /* ColorboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorboardTests.m; sourceTree = "<group>"; };
+		EA6F26F91B19350200304979 /* PaletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		EA6F26FA1B19352200304979 /* PaletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				EA6F26D81B191E5500304979 /* AppDelegate.m */,
 				EA6F26DA1B191E5500304979 /* ViewController.h */,
 				EA6F26DB1B191E5500304979 /* ViewController.m */,
+				EA6F26F91B19350200304979 /* PaletteViewController.h */,
+				EA6F26FA1B19352200304979 /* PaletteViewController.m */,
 				EA6F26DD1B191E5500304979 /* Colorboard.storyboard */,
 				EA6F26E01B191E5500304979 /* Images.xcassets */,
 				EA6F26E21B191E5500304979 /* LaunchScreen.xib */,
@@ -163,6 +168,7 @@
 		EA6F26C81B191E5500304979 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BNR;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Sander Peerna";
 				TargetAttributes = {
@@ -219,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6F26FB1B19352200304979 /* PaletteViewController.m in Sources */,
 				EA6F26DC1B191E5500304979 /* ViewController.m in Sources */,
 				EA6F26D91B191E5500304979 /* AppDelegate.m in Sources */,
 				EA6F26D61B191E5500304979 /* main.m in Sources */,
