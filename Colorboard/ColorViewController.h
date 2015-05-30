@@ -14,11 +14,5 @@
 @property (nonatomic) BOOL existingColor;
 @property (nonatomic) ColorDescription *colorDescription;
 
-@property (nonatomic, weak) IBOutlet UITextField *textField;
-
-@property (nonatomic, weak) IBOutlet UISlider *redSlider;
-@property (nonatomic, weak) IBOutlet UISlider *greenSlider;
-@property (nonatomic, weak) IBOutlet UISlider *blueSlider;
-
 @end
 

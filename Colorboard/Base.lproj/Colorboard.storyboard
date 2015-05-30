@@ -35,7 +35,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Npx-bU-t5h" kind="show" id="Q4y-PF-MWc"/>
+                                    <segue destination="Npx-bU-t5h" kind="show" identifier="ExistingColor" id="Q4y-PF-MWc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

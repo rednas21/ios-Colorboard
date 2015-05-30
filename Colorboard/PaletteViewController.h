@@ -10,6 +10,4 @@
 
 @interface PaletteViewController : UITableViewController
 
-@property (nonatomic) NSMutableArray *colors;
-
 @end

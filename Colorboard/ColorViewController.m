@@ -8,6 +8,16 @@
 
 #import "ColorViewController.h"
 
+@interface ColorViewController ()
+
+@property (nonatomic, weak) IBOutlet UITextField *textField;
+
+@property (nonatomic, weak) IBOutlet UISlider *redSlider;
+@property (nonatomic, weak) IBOutlet UISlider *greenSlider;
+@property (nonatomic, weak) IBOutlet UISlider *blueSlider;
+
+@end
+
 @implementation ColorViewController
 
 - (void)viewDidLoad {

@@ -10,6 +10,12 @@
 #import "PaletteViewController.h"
 #import "ColorDescription.h"
 
+@interface PaletteViewController ()
+
+@property (nonatomic) NSMutableArray *colors;
+
+@end
+
 @implementation PaletteViewController
 
 - (void)viewWillAppear:(BOOL)animated
